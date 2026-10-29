@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" width="220" height="110">
-<rect x="6" y="14" width="64" height="64" rx="12" fill="#1f4fc4" fill-opacity=".92"/>
-<circle cx="38" cy="46" r="14" fill="#fff" fill-opacity=".85"/>
-<text x="84" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#1f4fc4">LOGO</text>
-<text x="84" y="68" font-family="Arial,sans-serif" font-size="13" fill="#666">Partner Logo 1</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 130" width="260" height="130"><g transform="translate(18 34)"><rect x="0" y="6" width="38" height="38" rx="9" fill="#1f4fc4"/><rect x="16" y="22" width="38" height="38" rx="9" fill="#18b394" fill-opacity=".92"/></g><text x="86" y="62" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#1f4fc4" letter-spacing=".5">NEXACHAIN</text><text x="86" y="86" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#1f4fc4" letter-spacing="6">LABS</text></svg>

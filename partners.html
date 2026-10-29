@@ -7,7 +7,8 @@
   <meta name="description" content="Industry organizations, research institutions and technology companies that support our internship programs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- root.css = ONE place for colors and fonts; style.css = layout -->
+  <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,9 +18,7 @@
 <!-- ================= HEADER ================= -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="index.html" class="logo" aria-label="Home">
-      <img src="images/logo.svg" alt="Logo">
-    </a>
+    <a href="index.html" class="logo" aria-label="Home"><img src="images/logo.svg" alt="System Level Solutions"></a>
 
     <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -35,20 +34,20 @@
           </ul>
         </li>
         <li class="has-sub">
-          <a href="#">Training &amp; Internships <i class="chev"></i></a>
+          <a href="index.html#offer">Training &amp; Internships <i class="chev"></i></a>
           <ul class="sub">
-            <li><a href="#">Aerospace &amp; Aviation</a></li>
-            <li><a href="#">Biotech &amp; Life Sciences</a></li>
-            <li><a href="#">Electronics &amp; Product Design</a></li>
-            <li><a href="#">Interdisciplinary Engineering</a></li>
-            <li><a href="#">Blockchain &amp; AI</a></li>
-            <li><a href="#">Finance &amp; Economics</a></li>
-            <li><a href="#">Marketing &amp; Communications</a></li>
+            <li><a href="program-aerospace-aviation.html">Aerospace &amp; Aviation</a></li>
+            <li><a href="program-biotech-life-sciences.html">Biotech &amp; Life Sciences</a></li>
+            <li><a href="program-electronics-product-design.html">Electronics &amp; Product Design</a></li>
+            <li><a href="program-interdisciplinary-engineering.html">Interdisciplinary Engineering</a></li>
+            <li><a href="program-blockchain-ai.html">Blockchain &amp; AI</a></li>
+            <li><a href="program-finance-economics.html">Finance &amp; Economics</a></li>
+            <li><a href="program-marketing-communications.html">Marketing &amp; Communications</a></li>
           </ul>
         </li>
         <li><a href="index.html#research">Research Paper Publication</a></li>
       </ul>
-      <a href="#" class="nav__cta">Enquire Now</a>
+      <a href="contact.html" class="nav__cta">Enquire Now</a>
     </nav>
   </div>
 </header>
@@ -69,46 +68,46 @@
 <section class="partners">
   <div class="container partners__list">
     <article class="pcard reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-1.svg" alt="Partner Logo 1"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-1.svg" alt="NexaChain Labs logo"></div>
       <div class="pcard__body">
         <h2>Blockchain &amp; Artificial Intelligence</h2>
-        <h3>Partner Company One Pvt. Ltd.</h3>
+        <h3>NexaChain Labs Pvt. Ltd.</h3>
         <p>A deep-technology infrastructure company building regulated blockchain systems for financial institutions, governments and public digital infrastructure.</p>
         <p>The team works on tokenization frameworks, digital asset systems, compliance infrastructure and decentralized identity, and hosts interns on live engineering problems.</p>
       </div>
     </article>
     <article class="pcard pcard--rev reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-2.svg" alt="Partner Logo 2"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-2.svg" alt="Genova logo"></div>
       <div class="pcard__body">
         <h2>Biotechnology &amp; Life Sciences</h2>
-        <h3>Partner Company Two Institute &amp; Laboratory</h3>
+        <h3>Genova Institute &amp; Laboratory Medicine</h3>
         <p>A research-driven biotechnology organization advancing genetic and molecular diagnostics to improve clinical outcomes.</p>
         <p>Its work spans cytogenetics, molecular biology, biochemical genetics and genomic research, giving students direct laboratory exposure.</p>
       </div>
     </article>
     <article class="pcard reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-3.svg" alt="Partner Logo 3"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-3.svg" alt="Ardent Energy logo"></div>
       <div class="pcard__body">
         <h2>Interdisciplinary Engineering</h2>
-        <h3>Partner Company Three Pvt. Ltd.</h3>
+        <h3>Ardent Energy Experts Pvt. Ltd.</h3>
         <p>A consulting and engineering services company specializing in energy systems, marine technologies and high-complexity infrastructure projects.</p>
         <p>Its expertise covers design and engineering, safety analysis, regulatory documentation, commissioning support and plant infrastructure.</p>
       </div>
     </article>
     <article class="pcard pcard--rev reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-4.svg" alt="Partner Logo 4"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-4.svg" alt="GrowthMark logo"></div>
       <div class="pcard__body">
         <h2>Finance &amp; Economics</h2>
-        <h3>Partner Company Four Pvt. Ltd.</h3>
+        <h3>GrowthMark Advisory Pvt. Ltd.</h3>
         <p>A global B2B growth consulting firm specializing in go-to-market strategy, econometric modelling, sales analytics and revenue expansion for technology companies.</p>
         <p>The firm works across three service areas: market entry advisory, analytics-driven sales and growth strategy.</p>
       </div>
     </article>
     <article class="pcard reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-5.svg" alt="Partner Logo 5"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-5.svg" alt="Orbitra Space logo"></div>
       <div class="pcard__body">
         <h2>Aeronautical &amp; Aerospace</h2>
-        <h3>Partner Company Five Technologies Pvt. Ltd.</h3>
+        <h3>Orbitra Space Technologies Pvt. Ltd.</h3>
         <p>A propulsion engineering company developing green propulsion systems for satellites and launch vehicles.</p>
         <p>Its work covers thruster design, propellant chemistry, propulsion integration and spacecraft mobility, with test facilities students can visit.</p>
       </div>
@@ -123,10 +122,10 @@
       </div>
     </article>
     <article class="pcard reveal">
-      <div class="pcard__logo"><img src="images/partner-logo-7.svg" alt="Partner Logo 7"></div>
+      <div class="pcard__logo"><img src="images/partner-logo-7.svg" alt="Vantel logo"></div>
       <div class="pcard__body">
         <h2>Marketing Communications</h2>
-        <h3>Partner Company Seven</h3>
+        <h3>Vantel Communications</h3>
         <p>Our partner for marketing communications exposure, offering students insight into branding, messaging strategy, outreach planning and communication ecosystems.</p>
         <p>Students are introduced to how marketing functions operate across industries, including storytelling, positioning and campaign development.</p>
       </div>
@@ -149,7 +148,7 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="about.html">About us</a></li>
-        <li><a href="#">Training &amp; Internships</a></li>
+        <li><a href="index.html#offer">Training &amp; Internships</a></li>
         <li><a href="partners.html" class="active">Our Partners</a></li>
         <li><a href="index.html#research">Research Paper Publication</a></li>
       </ul>

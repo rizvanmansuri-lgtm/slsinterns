@@ -7,7 +7,8 @@
   <meta name="description" content="Placeholder description – update after design approval.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- root.css = ONE place for colors and fonts; style.css = layout -->
+  <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,9 +18,7 @@
 <!-- ================= HEADER ================= -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="index.html" class="logo" aria-label="Home">
-      <img src="images/logo.svg" alt="Logo">
-    </a>
+    <a href="index.html" class="logo" aria-label="Home"><img src="images/logo.svg" alt="System Level Solutions"></a>
 
     <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -35,20 +34,20 @@
           </ul>
         </li>
         <li class="has-sub">
-          <a href="#">Training &amp; Internships <i class="chev"></i></a>
+          <a href="index.html#offer">Training &amp; Internships <i class="chev"></i></a>
           <ul class="sub">
-            <li><a href="#">Aerospace &amp; Aviation</a></li>
-            <li><a href="#">Biotech &amp; Life Sciences</a></li>
-            <li><a href="#">Electronics &amp; Product Design</a></li>
-            <li><a href="#">Interdisciplinary Engineering</a></li>
-            <li><a href="#">Blockchain &amp; AI</a></li>
-            <li><a href="#">Finance &amp; Economics</a></li>
-            <li><a href="#">Marketing &amp; Communications</a></li>
+            <li><a href="program-aerospace-aviation.html">Aerospace &amp; Aviation</a></li>
+            <li><a href="program-biotech-life-sciences.html">Biotech &amp; Life Sciences</a></li>
+            <li><a href="program-electronics-product-design.html">Electronics &amp; Product Design</a></li>
+            <li><a href="program-interdisciplinary-engineering.html">Interdisciplinary Engineering</a></li>
+            <li><a href="program-blockchain-ai.html">Blockchain &amp; AI</a></li>
+            <li><a href="program-finance-economics.html">Finance &amp; Economics</a></li>
+            <li><a href="program-marketing-communications.html">Marketing &amp; Communications</a></li>
           </ul>
         </li>
         <li><a href="#research">Research Paper Publication</a></li>
       </ul>
-      <a href="#" class="nav__cta">Enquire Now</a>
+      <a href="contact.html" class="nav__cta">Enquire Now</a>
     </nav>
   </div>
 </header>
@@ -63,7 +62,7 @@
       <p>YourBrand runs structured programs that blend concept-based training with hands-on project exposure and research, all under expert mentorship. Students in grades 9–12 use our programs and services to prepare strong applications for international undergraduate courses.</p>
       <div class="hero__btns">
         <a href="#offer" class="btn btn--orange">Explore Programs</a>
-        <a href="#" class="btn btn--orange">Talk to Us</a>
+        <a href="contact.html" class="btn btn--orange">Talk to Us</a>
       </div>
     </div>
   </div>
@@ -78,7 +77,7 @@
     <div class="offer__text reveal">
       <h2 class="grad-text">What We Offer</h2>
       <p>YourBrand provides <strong>10-day structured internship programs</strong> that combine training with practical experience, guided by industry and academic mentors. The programs help students build credible project and research experience, including <strong>publications in student journals</strong>, to support university and summer school applications.</p>
-      <a href="#" class="btn btn--grad">Explore more to find your dream internship</a>
+      <a href="program-marketing-communications.html" class="btn btn--grad">Explore more to find your dream internship</a>
     </div>
 
     <div class="offer__media reveal">
@@ -86,7 +85,7 @@
         <img src="images/offer.webp" alt="Professional working at a desk">
       </div>
       <span class="offer__badge">500+ Students Interns Trained</span>
-      <a href="#" class="offer__talk">
+      <a href="contact.html" class="offer__talk">
         <i class="offer__icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
         </i>
@@ -180,7 +179,7 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="about.html">About us</a></li>
-        <li><a href="#">Training &amp; Internships</a></li>
+        <li><a href="index.html#offer">Training &amp; Internships</a></li>
         <li><a href="partners.html">Our Partners</a></li>
         <li><a href="index.html#research">Research Paper Publication</a></li>
       </ul>

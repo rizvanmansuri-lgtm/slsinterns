@@ -7,7 +7,8 @@
   <meta name="description" content="A structured internship and research platform for students in Grades 9–12.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- root.css = ONE place for colors and fonts; style.css = layout -->
+  <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,9 +18,7 @@
 <!-- ================= HEADER ================= -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="index.html" class="logo" aria-label="Home">
-      <img src="images/logo.svg" alt="Logo">
-    </a>
+    <a href="index.html" class="logo" aria-label="Home"><img src="images/logo.svg" alt="System Level Solutions"></a>
 
     <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -35,20 +34,20 @@
           </ul>
         </li>
         <li class="has-sub">
-          <a href="#">Training &amp; Internships <i class="chev"></i></a>
+          <a href="index.html#offer">Training &amp; Internships <i class="chev"></i></a>
           <ul class="sub">
-            <li><a href="#">Aerospace &amp; Aviation</a></li>
-            <li><a href="#">Biotech &amp; Life Sciences</a></li>
-            <li><a href="#">Electronics &amp; Product Design</a></li>
-            <li><a href="#">Interdisciplinary Engineering</a></li>
-            <li><a href="#">Blockchain &amp; AI</a></li>
-            <li><a href="#">Finance &amp; Economics</a></li>
-            <li><a href="#">Marketing &amp; Communications</a></li>
+            <li><a href="program-aerospace-aviation.html">Aerospace &amp; Aviation</a></li>
+            <li><a href="program-biotech-life-sciences.html">Biotech &amp; Life Sciences</a></li>
+            <li><a href="program-electronics-product-design.html">Electronics &amp; Product Design</a></li>
+            <li><a href="program-interdisciplinary-engineering.html">Interdisciplinary Engineering</a></li>
+            <li><a href="program-blockchain-ai.html">Blockchain &amp; AI</a></li>
+            <li><a href="program-finance-economics.html">Finance &amp; Economics</a></li>
+            <li><a href="program-marketing-communications.html">Marketing &amp; Communications</a></li>
           </ul>
         </li>
         <li><a href="index.html#research">Research Paper Publication</a></li>
       </ul>
-      <a href="#" class="nav__cta">Enquire Now</a>
+      <a href="contact.html" class="nav__cta">Enquire Now</a>
     </nav>
   </div>
 </header>
@@ -62,7 +61,7 @@
       <p>We address a gap that most high-school students face while preparing for competitive university applications and summer schools: they have academic interest, but lack structured proof of it.</p>
       <p>Today's undergraduate applications require more than grades. Universities expect demonstrated engagement through internships, research exposure, project work and professional recommendations that validate a student's interest in a chosen field. However, students often struggle to find relevant opportunities, credible mentors and structured pathways that meaningfully contribute to their profiles.</p>
     </div>
-    <img class="banner__img banner__img--about" src="images/about-banner.svg" alt="Student holding books (placeholder)">
+    <img class="banner__img banner__img--about" src="images/about-banner.webp" alt="Student holding notebooks and a backpack">
   </div>
 </section>
 
@@ -97,7 +96,7 @@
       <h4>Quick Links</h4>
       <ul>
         <li><a href="about.html" class="active">About us</a></li>
-        <li><a href="#">Training &amp; Internships</a></li>
+        <li><a href="index.html#offer">Training &amp; Internships</a></li>
         <li><a href="partners.html">Our Partners</a></li>
         <li><a href="index.html#research">Research Paper Publication</a></li>
       </ul>

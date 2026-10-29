@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" width="220" height="110">
-<rect x="6" y="14" width="64" height="64" rx="12" fill="#c0392b" fill-opacity=".92"/>
-<circle cx="38" cy="46" r="14" fill="#fff" fill-opacity=".85"/>
-<text x="84" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#c0392b">LOGO</text>
-<text x="84" y="68" font-family="Arial,sans-serif" font-size="13" fill="#666">Partner Logo 4</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 130" width="260" height="130"><text x="130" y="72" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="38" font-style="italic" font-weight="700"><tspan fill="#c0392b">Growth</tspan><tspan fill="#1f5f9a">Mark</tspan></text><path d="M52 82h156" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/></svg>

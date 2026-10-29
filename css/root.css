@@ -1,0 +1,64 @@
+/* =====================================================================
+   ROOT.CSS  –  the ONE file to edit for colors and fonts.
+   Every other stylesheet reads these variables, so changing a value
+   here updates all pages (home, about, partners, contact).
+   ===================================================================== */
+
+/* ---- FONTS: change the Google Fonts link here, then the names below ---- */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&display=swap');
+
+:root{
+  /* ---------- FONTS ---------- */
+  --font-heading:'Lexend',system-ui,-apple-system,'Segoe UI',sans-serif;   /* headings, nav, labels, form */
+  --font-body:'Open Sans',system-ui,-apple-system,'Segoe UI',sans-serif;   /* paragraphs, buttons */
+
+  /* ---------- BRAND COLORS ---------- */
+  --color-primary:#5b429f;          /* main purple (gradient start, links on hover) */
+  --color-secondary:#9c4e9c;        /* magenta (gradient end) */
+  --color-accent:#ee9232;           /* orange buttons / badge */
+  --color-accent-dark:#d97c15;      /* orange hover */
+
+  /* ---------- GRADIENTS (built from the colors above) ---------- */
+  --gradient-main:linear-gradient(180deg,var(--color-primary) 0%,#9e509d 100%);   /* hero, page banners, counters */
+  --gradient-button:linear-gradient(180deg,var(--color-primary) 0%,#9e509d 100%); /* purple buttons */
+  --gradient-button-h:linear-gradient(90deg,var(--color-primary),#8d4e9d);        /* header "Enquire Now" */
+  --gradient-program:linear-gradient(90deg,#4b56a6 0%,#9d4f9c 100%);              /* program page hero */
+  --gradient-heading:linear-gradient(90deg,#3d3a9a 0%,#8a4a9d 100%);              /* gradient headings */
+
+  /* ---------- TEXT ---------- */
+  --color-text:#111;                /* normal dark text */
+  --color-text-dark:#000;           /* card numbers / titles */
+  --color-text-muted:#8e8e9a;       /* grey paragraphs */
+  --color-label:#7d7d88;            /* small uppercase labels */
+  --color-on-primary-soft:#f3ecf8;  /* paragraph text on purple */
+  --color-about-text:#14143a;       /* About page body text */
+
+  /* ---------- SURFACES ---------- */
+  --color-bg:#fff;
+  --color-bg-soft:#f5f5f5;          /* "What We Offer" background */
+  --color-primary-tint:#f3eefb;     /* dropdown hover */
+  --color-border:#dcdce2;
+  --color-card-shadow:rgba(0,0,0,.12);
+  --color-panel:#9b4f9b;            /* partner card panel + highlighted words */
+
+  /* ---------- CONTACT PAGE ---------- */
+  --color-icon:#4b4ba3;             /* contact icons + social circles */
+  --color-input-bg:#f5f5f7;
+  --color-success:#1e8a4c;
+  --color-error:#c0392b;
+
+  /* ---------- FOOTER ---------- */
+  --footer-bg:#000;
+  --footer-text:#bdbdbd;
+  --footer-heading:#fff;
+  --footer-link:#d0cde0;
+  --footer-active:#c35ac4;          /* current page link */
+  --footer-border:#4a4a4a;
+  --footer-social-bg:#7a7a7a;
+  --footer-social-icon:#1a1a1a;
+  --color-to-top:#c98a3a;           /* back-to-top button */
+
+  /* ---------- SHADOWS ---------- */
+  --shadow-accent:rgba(238,146,50,.4);
+  --shadow-primary:rgba(91,66,159,.4);
+}

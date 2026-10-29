@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" width="220" height="110">
-<rect x="6" y="14" width="64" height="64" rx="12" fill="#2a2f7a" fill-opacity=".92"/>
-<circle cx="38" cy="46" r="14" fill="#fff" fill-opacity=".85"/>
-<text x="84" y="44" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#2a2f7a">LOGO</text>
-<text x="84" y="68" font-family="Arial,sans-serif" font-size="13" fill="#666">Partner Logo 2</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 130" width="260" height="130"><text x="130" y="68" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="300" fill="#26307a" letter-spacing="3">GENOVA</text><circle cx="64" cy="94" r="9" fill="none" stroke="#26307a" stroke-width="2"/><circle cx="64" cy="94" r="3.5" fill="#26307a"/><text x="82" y="98" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#666">Institute &amp; Laboratory Medicine</text></svg>
