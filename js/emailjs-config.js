@@ -20,9 +20,9 @@
         {{page_url}}        Full URL of that page
    ===================================================================== */
 window.EMAILJS_CONFIG = {
-  publicKey:  'YOUR_PUBLIC_KEY',
-  serviceId:  'YOUR_SERVICE_ID',
-  templateId: 'YOUR_TEMPLATE_ID',
+  publicKey:  'KMz0CeGkUnJobJMhK',
+  serviceId:  'service_6yh7xh6',
+  templateId: 'template_tdcdtb8',
 
   /* Messages shown under the Submit button */
   messages: {
