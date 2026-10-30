@@ -78,7 +78,8 @@ h1,h2,h3,h4,p{margin:0}
 .process__head p{font-family:var(--font-heading);font-weight:400;font-size:1.25rem;line-height:1.6;color:var(--color-text-muted);max-width:42rem}
 .process__head p strong{font-weight:700}
 .process__head .btn{margin-top:1.3rem}
-.stairs{display:grid;grid-template-columns:repeat(4,18.75rem);align-items:start;margin-top:-5rem;position:relative}
+.stairs{display:grid;grid-template-columns:repeat(4,18.75rem);align-items:start;margin-top:-5rem;position:relative;pointer-events:none}   /* container overlaps the button above, so let clicks pass through */
+.stairs .stair{pointer-events:auto}
 .stair{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;height:27.8rem;padding:2rem 2.4rem;background:#fff;box-shadow:.25rem .35rem 1rem rgba(0,0,0,.16);transition:box-shadow .3s,transform .5s ease}
 .stair:nth-child(1){margin-top:9.4rem}
 .stair:nth-child(2){margin-top:6.25rem}
@@ -598,3 +599,13 @@ button.pager__item:focus-visible{outline:2px solid var(--color-primary);outline-
   .rcard p{font-size:.88rem}
 }
 @media (max-width:560px){.rp .container{width:100%;padding-inline:5%}.rproc__grid{padding-inline:5%}.rcard img{height:12rem}}
+
+/* =========================================================
+   Form validation states (js/contact.js)
+   ========================================================= */
+.field__error{margin:.3rem 0 0;font-family:var(--font-heading);font-size:.8125rem;line-height:1.4;color:var(--color-error)}
+.field__error[hidden]{display:none}
+.field.is-invalid input[type=text],.field.is-invalid input[type=tel],.field.is-invalid input[type=email],.field.is-invalid textarea{background:#fdf3f2;border-color:var(--color-error)}
+.field.is-invalid input:focus,.field.is-invalid textarea:focus{box-shadow:0 0 0 3px rgba(192,57,43,.18)}
+.field--radio.is-invalid .radio{color:var(--color-error)}
+.rp .field__error{font-size:.9rem}

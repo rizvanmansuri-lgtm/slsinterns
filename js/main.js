@@ -10,8 +10,27 @@
   window.addEventListener('scroll', function () {
     toTop.classList.toggle('show', window.scrollY > 400);
   }, { passive: true });
+  // Animated scroll to top. Done in JS (not the browser's own smooth scroll)
+  // so it also animates when the OS has "reduce animations" switched on.
+  var scrolling = false;
   toTop.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    var startY = window.pageYOffset || document.documentElement.scrollTop;
+    if (startY <= 0 || scrolling) return;
+    var dur = Math.min(1100, Math.max(500, startY * 0.35)); // ms, scales with distance
+    var t0 = null;
+    scrolling = true;
+    function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; } // easeInOutCubic
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      window.scrollTo({ top: startY * (1 - ease(p)), left: 0, behavior: 'instant' });
+      if (p < 1 && scrolling) { requestAnimationFrame(step); } else { scrolling = false; }
+    }
+    requestAnimationFrame(step);
+  });
+  // let the user take over: any wheel/touch cancels the animation
+  ['wheel', 'touchstart'].forEach(function (ev) {
+    window.addEventListener(ev, function () { scrolling = false; }, { passive: true });
   });
 
   // Mobile menu
