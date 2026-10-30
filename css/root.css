@@ -5,11 +5,21 @@
    ===================================================================== */
 
 /* ---- FONTS: change the Google Fonts link here, then the names below ---- */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@400;600;700&display=swap');
+/* Fonts are self-hosted in /fonts (no internet needed). To change fonts, replace the files and edit these @font-face rules. */
+@font-face{font-family:'Lexend';font-style:normal;font-weight:300;font-display:swap;src:url('../fonts/lexend-latin-300-normal.woff2') format('woff2')}
+@font-face{font-family:'Lexend';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/lexend-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Lexend';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/lexend-latin-500-normal.woff2') format('woff2')}
+@font-face{font-family:'Lexend';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/lexend-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/roboto-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/open-sans-latin-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/open-sans-latin-600-normal.woff2') format('woff2')}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-display:swap;src:url('../fonts/open-sans-latin-700-normal.woff2') format('woff2')}
+
 
 :root{
   /* ---------- FONTS ---------- */
   --font-heading:'Lexend',system-ui,-apple-system,'Segoe UI',sans-serif;   /* headings, nav, labels, form */
+  --font-footer:'Roboto',system-ui,-apple-system,'Segoe UI',sans-serif;    /* footer paragraphs, address, copyright */
   --font-body:'Open Sans',system-ui,-apple-system,'Segoe UI',sans-serif;   /* paragraphs, buttons */
 
   /* ---------- BRAND COLORS ---------- */
