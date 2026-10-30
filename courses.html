@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training cum Internship – System Level Solutions</title>
+  <meta name="description" content="Structured training cum internship programs for students in Grades 9–12 across aerospace, biotechnology, AI, electronics, finance, engineering and marketing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- root.css = ONE place for colors and fonts; style.css = layout -->
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo" aria-label="Home"><img src="images/logo.svg" alt="System Level Solutions"></a>
+
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="has-sub">
+          <a href="index.html">Home <i class="chev"></i></a>
+          <ul class="sub">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="partners.html">Our Partners</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="courses.html">Training &amp; Internships <i class="chev"></i></a>
+          <ul class="sub">
+            <li><a href="program-aerospace-aviation.html">Aerospace &amp; Aviation</a></li>
+            <li><a href="program-biotech-life-sciences.html">Biotech &amp; Life Sciences</a></li>
+            <li><a href="program-electronics-product-design.html">Electronics &amp; Product Design</a></li>
+            <li><a href="program-interdisciplinary-engineering.html">Interdisciplinary Engineering</a></li>
+            <li><a href="program-blockchain-ai.html">Blockchain &amp; AI</a></li>
+            <li><a href="program-finance-economics.html">Finance &amp; Economics</a></li>
+            <li><a href="program-marketing-communications.html">Marketing &amp; Communications</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="index.html#research">Research Paper Publication <i class="chev"></i></a>
+          <ul class="sub">
+            <li><a href="research-standard.html">Standard Research Paper</a></li>
+            <li><a href="research-advanced.html">Advanced Research Paper</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Enquire Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+
+<!-- ================= BANNER ================= -->
+<section class="banner banner--about banner--courses">
+  <div class="container banner__inner">
+    <div class="banner__text">
+      <h1>Training cum Internship</h1>
+      <p>Choose from a wide range of structured training created by industry professionals. Whether you are a beginner or looking to upgrade your expertise, our training are designed to deliver practical knowledge, real-world application, and measurable results.</p>
+    </div>
+    <img class="banner__img banner__img--about" src="images/about-banner.webp" alt="Student holding notebooks and a backpack">
+  </div>
+</section>
+
+<!-- ================= COURSES ================= -->
+<section class="courses">
+  <div class="container courses__grid">
+
+    <!-- Category filter -->
+    <aside class="cats" aria-label="Filter by domain">
+      <ul class="cats__list" id="catList">
+        <li><button type="button" class="cats__btn is-active" data-filter="all" aria-pressed="true">All</button></li>
+        <li><button type="button" class="cats__btn" data-filter="aerospace" aria-pressed="false">Aeronautical &amp; Aerospace</button></li>
+        <li><button type="button" class="cats__btn" data-filter="biotech" aria-pressed="false">Biotechnology &amp; Life Sciences</button></li>
+        <li><button type="button" class="cats__btn" data-filter="blockchain-ai" aria-pressed="false">Blockchain &amp; Artificial Intelligence</button></li>
+        <li><button type="button" class="cats__btn" data-filter="electronics" aria-pressed="false">Electronics &amp; Instrumentation Product Design</button></li>
+        <li><button type="button" class="cats__btn" data-filter="finance" aria-pressed="false">Finance &amp; Economics</button></li>
+        <li><button type="button" class="cats__btn" data-filter="interdisciplinary" aria-pressed="false">Interdisciplinary Engineering</button></li>
+        <li><button type="button" class="cats__btn" data-filter="marketing" aria-pressed="false">Marketing Communications</button></li>
+      </ul>
+    </aside>
+
+    <!-- Course cards -->
+    <div class="courses__main">
+      <div class="clist" id="courseList" aria-live="polite">
+
+        <article class="ccard" data-cat="aerospace">
+          <a class="ccard__img" href="program-aerospace-aviation.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/offer.webp'"></a>
+          <div class="ccard__body">
+            <h2>Aeronautical &amp; Aerospace</h2>
+            <p>The Aeronautical &amp; Aerospace program is designed for students planning undergraduate studies in aerospace, mechanical and space engineering. It is delivered with a propulsion engineering partner that develops green propulsion systems for satellites and launch vehicles.</p>
+            <a href="program-aerospace-aviation.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="biotech">
+          <a class="ccard__img" href="program-biotech-life-sciences.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/about-main.webp'"></a>
+          <div class="ccard__body">
+            <h2>Biotechnology &amp; Life Sciences</h2>
+            <p>The Biotechnology &amp; Life Sciences program is designed for students planning undergraduate studies in biotechnology, life sciences, medicine and related fields. It is delivered with a research-driven laboratory working on genetic and molecular diagnostics.</p>
+            <a href="program-biotech-life-sciences.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="electronics">
+          <a class="ccard__img" href="program-electronics-product-design.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/paper-standard.webp'"></a>
+          <div class="ccard__body">
+            <h2>Electronics &amp; Instrumentation Product Design</h2>
+            <p>The Electronics &amp; Instrumentation Product Design program is designed for students planning undergraduate studies in electronics, electrical, instrumentation and embedded systems. It is delivered with System Level Solutions, a global electronics product engineering and manufacturing company.</p>
+            <a href="program-electronics-product-design.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="interdisciplinary">
+          <a class="ccard__img" href="program-interdisciplinary-engineering.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/paper-advanced.webp'"></a>
+          <div class="ccard__body">
+            <h2>Interdisciplinary Engineering</h2>
+            <p>The Interdisciplinary Engineering program is designed for students planning undergraduate studies in mechanical, civil, energy and systems engineering. It is delivered with an engineering consulting partner working on energy systems and complex infrastructure projects.</p>
+            <a href="program-interdisciplinary-engineering.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="blockchain-ai">
+          <a class="ccard__img" href="program-blockchain-ai.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/offer.webp'"></a>
+          <div class="ccard__body">
+            <h2>Blockchain &amp; Artificial Intelligence</h2>
+            <p>The Blockchain &amp; Artificial Intelligence program is designed for students planning undergraduate studies in computer science, data science, fintech and emerging technologies. It is delivered with a deep-technology partner building regulated blockchain systems and data infrastructure.</p>
+            <a href="program-blockchain-ai.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="finance">
+          <a class="ccard__img" href="program-finance-economics.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/about-main.webp'"></a>
+          <div class="ccard__body">
+            <h2>Finance &amp; Economics</h2>
+            <p>The Finance &amp; Economics program is designed for students planning undergraduate studies in economics, finance, business analytics and management. It is delivered with a growth consulting partner specializing in market strategy and analytics.</p>
+            <a href="program-finance-economics.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+        <article class="ccard" data-cat="marketing">
+          <a class="ccard__img" href="program-marketing-communications.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80" alt="" loading="lazy" onerror="this.onerror=null;this.src='images/paper-standard.webp'"></a>
+          <div class="ccard__body">
+            <h2>Marketing Communications</h2>
+            <p>The Marketing Communications program is designed for students planning undergraduate studies in business, media, branding and communication disciplines. It is delivered with a marketing and communications organization working across brand strategy, messaging development and outreach planning.</p>
+            <a href="program-marketing-communications.html" class="ccard__btn">Explore more</a>
+          </div>
+        </article>
+
+      </div>
+
+      <nav class="pager" id="pager" aria-label="Course pages"></nav>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__about">
+      <a href="index.html" class="logo" aria-label="Home"><img src="images/logo.svg" alt="System Level Solutions"></a>
+      <p>We address a gap many high-school students face while preparing for competitive university applications: they have academic interest, but no structured proof of it.</p>
+      <p>Today's undergraduate applications ask for more than grades. Universities look for internships, research exposure, project work and professional recommendations that validate a student's interest in a chosen field. Finding relevant opportunities, credible mentors and structured pathways is hard, and our programs are built to close that gap and strengthen every student's profile.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="courses.html" class="active">Training &amp; Internships</a></li>
+        <li><a href="partners.html">Our Partners</a></li>
+        <li><a href="index.html#research">Research Paper Publication</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Address</h4>
+      <p><strong>System Level Solutions (India) Pvt. Ltd.</strong><br>32, D4, Phase 1, GIDC Estate<br>V.U. Nagar - 388 121<br>Gujarat, India.</p>
+      <h4>Contact</h4>
+      <p>Tel.: <a href="tel:+912692232501">+91-2692-232 501/502 (Ext. 47)</a></p>
+      <p>For more information about products and services, please contact us at <a href="mailto:info@slscorp.com">info@slscorp.com</a></p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 9h3v10H5zM6.5 4.5a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zM10 9h3v1.4c.5-.9 1.6-1.6 3-1.6 3 0 3.5 2 3.5 4.5V19h-3v-5c0-1.2 0-2.5-1.6-2.5S13 12.8 13 14v5h-3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__bar">© 2026 System Level Solutions (India) Pvt. Ltd. All rights reserved.</div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="js/courses.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

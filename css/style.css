@@ -439,3 +439,162 @@ h1,h2,h3,h4,p{margin:0}
   .row{grid-template-columns:1fr}
   .phero h1{font-size:1.8rem}
 }
+
+/* =========================================================
+   Courses page (Training cum Internship listing)
+   ========================================================= */
+.courses{background:var(--color-bg-soft);padding:3.9rem 0 4.5rem}
+.courses__grid{display:grid;grid-template-columns:18.5rem 1fr;gap:1.25rem;align-items:start}
+
+/* category filter */
+.cats{position:sticky;top:5.6rem;background:#fff;border-radius:1.25rem;padding:1rem;box-shadow:0 0 2.2rem var(--color-card-shadow)}
+.cats__list li{border-bottom:1px solid var(--color-border)}
+.cats__list li:first-child{border-bottom:0;margin-bottom:.5rem}
+.cats__list li:last-child{border-bottom:0}
+.cats__btn{display:block;width:100%;padding:.8rem .35rem;background:none;border:0;border-radius:.4rem;text-align:left;font-family:var(--font-heading);font-weight:400;font-size:.94rem;line-height:1.35;color:var(--color-text);cursor:pointer;transition:color .2s,background .2s}
+.cats__btn:hover{color:var(--color-primary)}
+.cats__btn:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+.cats__btn.is-active{background:var(--color-accent);color:#fff;padding-left:.75rem;padding-right:.75rem}
+.cats__list li:first-child .cats__btn{padding-top:.95rem;padding-bottom:.95rem}
+
+/* cards */
+.clist{display:grid;gap:1.25rem}
+.ccard{display:grid;grid-template-columns:43% 1fr;gap:1.4rem;align-items:center;background:#fff;border-radius:1.25rem;padding:1.15rem;box-shadow:0 0 2.2rem var(--color-card-shadow);transition:transform .3s,box-shadow .3s}
+.ccard[hidden]{display:none}
+.ccard:hover{transform:translateY(-.25rem);box-shadow:0 .9rem 2.6rem rgba(0,0,0,.16)}
+.ccard__img{display:block;overflow:hidden;border-radius:.9rem;aspect-ratio:342/220;background:#ddd}
+.ccard__img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.ccard:hover .ccard__img img{transform:scale(1.04)}
+.ccard__body{padding:.2rem .6rem .2rem 0}
+.ccard h2{font-family:var(--font-heading);font-weight:500;font-size:1.5rem;line-height:1.3;color:var(--color-text-dark);margin-bottom:1rem}
+.ccard p{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;font-family:var(--font-body);font-weight:400;font-size:.875rem;line-height:1.65;color:var(--color-text);margin-bottom:1.2rem}
+.ccard__btn{display:inline-flex;align-items:center;height:2.4rem;padding:0 1.15rem;border-radius:.5rem;background:var(--gradient-button);color:#fff;font-family:var(--font-heading);font-weight:500;font-size:.75rem;letter-spacing:.02em;text-transform:uppercase;transition:transform .25s,box-shadow .25s}
+.ccard__btn:hover{transform:translateY(-2px);box-shadow:0 .5rem 1.1rem var(--shadow-primary)}
+
+/* pagination */
+.pager{display:flex;justify-content:center;align-items:center;gap:.4rem;margin-top:1.6rem;font-family:var(--font-heading);font-size:.94rem}
+.pager[hidden]{display:none}
+.pager__item{min-width:2.2rem;height:2.2rem;padding:0 .7rem;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:.5rem;background:none;font:inherit;color:var(--color-primary);cursor:pointer;transition:background .2s,color .2s}
+button.pager__item:hover{background:var(--color-primary-tint)}
+button.pager__item:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+.pager__item.is-current{background:var(--gradient-button);color:#fff;cursor:default}
+.pager__item.is-disabled{color:var(--color-text-muted);cursor:default}
+
+@media (max-width:1100px){
+  .courses{padding:2.5rem 0 3.5rem}
+  .courses__grid{grid-template-columns:1fr;gap:1.5rem}
+  .cats{position:static;padding:.75rem}
+  .cats__list{display:flex;flex-wrap:wrap;gap:.5rem}
+  .cats__list li,.cats__list li:first-child{border:0;margin:0}
+  .cats__btn,.cats__list li:first-child .cats__btn{width:auto;padding:.55rem .95rem;border:1px solid var(--color-border);border-radius:999px;font-size:.88rem}
+  .cats__btn.is-active{border-color:var(--color-accent);padding-left:.95rem;padding-right:.95rem}
+  .ccard h2{font-size:1.3rem}
+}
+@media (max-width:700px){
+  .ccard{grid-template-columns:1fr;gap:1rem}
+  .ccard__body{padding:0 .3rem .4rem}
+}
+
+/* courses banner: tall enough for the full student cutout */
+@media (min-width:1101px){
+  .banner--courses .banner__inner{min-height:20.6rem;padding-top:5.2rem}
+}
+
+/* =========================================================
+   Research paper pages (advanced / standard)
+   Scoped to <main class="rp">. Sizes measured from the design
+   at a 1440px viewport (container 900px = 75rem).
+   Reuses .phero (hero + form) and .pget (split section).
+   ========================================================= */
+.rp .container{width:75rem}
+
+/* ---- hero: 673px tall, 374px form card ---- */
+.rp .phero{padding:6.4rem 0}
+.rp .phero__grid{grid-template-columns:1fr 31.2rem;gap:4rem;align-items:center}
+.rp .phero h1{font-size:3.333rem;line-height:1.1;margin-bottom:1.2rem}
+.rp .rhero__copy p{font-weight:400;font-size:1.083rem;line-height:1.65;margin-bottom:0.933rem;max-width:34rem}
+.rp .enquire{border-radius:1.667rem;padding:2rem 2.133rem 3rem;box-shadow:0 0 3.2rem rgba(0,0,0,.18)}
+.rp .enquire__title{font-size:1.833rem;margin-bottom:1.333rem}
+.rp .field{margin-bottom:1.333rem}
+.rp .field label,.rp .field__legend{font-size:0.917rem;font-weight:500;line-height:1.5;margin-bottom:0.267rem}
+.rp .field input[type=text],.rp .field input[type=tel],.rp .field input[type=email]{height:2.133rem;font-size:1.067rem;border-radius:0.533rem}
+.rp .field textarea{height:6.267rem;font-size:1.067rem;border-radius:0.533rem;padding:0.533rem 0.8rem}
+.rp .field--radio{margin-top:0.667rem}
+.rp .radio{font-size:0.917rem;margin-bottom:0.2rem}
+.rp .enquire__btn{height:3.4rem;margin-top:1.6rem;border-radius:0.8rem;font-size:1.333rem}
+
+/* ---- program structure: 541px tall, 448x391 image ---- */
+.rp .pget{padding:6.267rem 0}
+.rp .pget__grid{grid-template-columns:1fr 37.333rem;gap:2.933rem;align-items:center}
+.rp .pget__text h2{font-family:var(--font-heading);font-weight:600;font-size:2.133rem;line-height:1.3;color:var(--color-about-text);margin-bottom:1.067rem}
+.rp .pget__text>p,.rp .pget__note{font-size:1.083rem;line-height:1.6;color:var(--color-about-text);margin-bottom:1.2rem}
+.rp .pget__note{margin:1.6rem 0 0}
+.rp .plist--circle li{font-weight:500;font-size:1.083rem;line-height:1.4;margin-bottom:1rem;align-items:center;gap:0.867rem}
+.rp .pget .ico-check-circle{width:1.8rem;height:1.8rem}
+.rp .pget__img img{width:100%;aspect-ratio:448/391;border-radius:1.067rem;box-shadow:none}
+
+/* ---- research development process: 534px tall, 343x411 image ---- */
+.rproc{background:var(--gradient-program);color:#fff;padding:5.133rem 0}
+.rproc__grid{display:grid;grid-template-columns:28.533rem 1fr;gap:7.067rem;align-items:center;width:72rem;margin-left:2.933rem}
+.rproc__img img{width:100%;height:34.267rem;object-fit:cover;object-position:top;border-radius:1.467rem}
+.rproc h2{font-family:var(--font-heading);font-weight:600;font-size:2.267rem;line-height:1.3;margin-bottom:0.933rem}
+.rproc__text>p{font-family:var(--font-body);font-size:1.083rem;line-height:1.6;margin-bottom:1.2rem}
+.rproc .plist li{color:#fff;font-weight:600;font-size:1.167rem;line-height:1.4;margin-bottom:1.4rem;align-items:center;gap:0.933rem}
+.rproc .plist li:last-child{margin-bottom:0}
+.rproc .ico-check-circle{color:#fff;width:1.867rem;height:1.867rem}
+
+/* ---- authorship & review: 454px section, 900x304 card ---- */
+.rauth{padding:6.267rem 0}
+.rauth__card{display:grid;grid-template-columns:1fr 31.667rem;gap:2rem;align-items:center;min-height:25.333rem;background:#fff;border-radius:1.067rem;padding:1.867rem 2.933rem 1.867rem 1.867rem;box-shadow:0 0 2.667rem var(--color-card-shadow)}
+.rauth__text{max-width:31.333rem}
+.rauth h2{font-family:var(--font-heading);font-weight:600;font-size:2rem;line-height:1.3;color:var(--color-text-dark);margin-bottom:0.933rem}
+.rauth p{font-family:var(--font-body);font-size:1.167rem;line-height:1.7;color:var(--color-text);margin-bottom:0.667rem}
+.rauth__img img{width:100%;height:21rem;object-fit:cover;border-radius:1.2rem;box-shadow:none}
+
+/* ---- outcome: 511px tall, 40/60 split ---- */
+.rout{display:grid;grid-template-columns:40.3fr 59.7fr;min-height:42.533rem}
+.rout__img{position:relative;min-height:21.333rem}
+.rout__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rout__panel{background:var(--gradient-program);color:#fff;display:flex;align-items:center;padding:4.667rem 0 4.667rem 2rem}
+.rout__inner{width:57.6rem;max-width:100%}
+.rout h2{font-family:var(--font-heading);font-weight:500;font-size:2.667rem;line-height:1.3;margin-bottom:1.467rem}
+.rout__list{display:grid;gap:1.467rem}
+.rout__item{display:flex;align-items:center;gap:1.467rem;background:#fff;color:var(--color-text);border-radius:0.933rem;padding:0.533rem;min-height:6rem;font-family:var(--font-heading);font-weight:400;font-size:1.083rem}
+.rout__icon{flex:none;width:4.933rem;height:4.933rem;border-radius:0.733rem;background:var(--color-accent);color:#fff;display:grid;place-items:center}
+.rout__icon svg{width:2.4rem;height:2.4rem}
+
+/* ---- application relevance: 560px section, 435x358 cards ---- */
+.rrel{padding:6.133rem 0}
+.rrel__title{font-family:var(--font-heading);font-weight:400;font-size:2.8rem;line-height:1.3;text-align:center;color:var(--color-text-dark);margin-bottom:0.8rem}
+.rrel__grid{display:grid;grid-template-columns:1fr 1fr;gap:2.333rem}
+.rcard{background:#fff;border-radius:1.067rem;padding:0.6rem 0.6rem 2.4rem;box-shadow:0 0 2.667rem var(--color-card-shadow)}
+.rcard img{width:100%;height:21rem;object-fit:cover;border-radius:0.933rem;margin-bottom:0.933rem}
+.rcard p{font-family:var(--font-body);font-size:1rem;line-height:1.65;color:var(--color-text);padding:0 0.8rem}
+
+@media (max-width:1100px){
+  .rp .container{width:46rem}
+  .rp .phero{padding:3.2rem 0}
+  .rp .phero__grid{grid-template-columns:1fr;gap:2.5rem}
+  .rp .rhero__copy p{max-width:none;font-size:1rem}
+  .rp .pget{padding:3.5rem 0}
+  .rp .pget__grid{grid-template-columns:1fr;gap:2rem}
+  .rp .pget__text>p,.rp .pget__note,.rp .plist--circle li{font-size:1rem}
+  .rproc{padding:3.5rem 0}
+  .rproc__grid{grid-template-columns:1fr;gap:2rem;width:auto;margin-left:0}
+  .rproc__img img{height:20rem}
+  .rproc__text>p{font-size:1rem}
+  .rproc .plist li{font-size:1rem}
+  .rauth{padding:3.5rem 0}
+  .rauth__card{grid-template-columns:1fr;padding:1.4rem}
+  .rauth__text{max-width:none}
+  .rauth p{font-size:1rem}
+  .rout{grid-template-columns:minmax(0,1fr)}
+  .rout__panel{padding:2.5rem 5%}
+  .rout__inner{width:100%}
+  .rout__item{font-size:.94rem}
+  .rrel{padding:3.5rem 0}
+  .rrel__title{font-size:1.7rem}
+  .rrel__grid{grid-template-columns:1fr}
+  .rcard p{font-size:.88rem}
+}
+@media (max-width:560px){.rp .container{width:100%;padding-inline:5%}.rproc__grid{padding-inline:5%}.rcard img{height:12rem}}
