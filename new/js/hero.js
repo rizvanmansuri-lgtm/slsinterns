@@ -8,7 +8,6 @@
   var dots = hero.querySelectorAll('.hero__dots button');
   if (slides.length < 2) return;
   var i = 0, timer = null;
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function show(n) {
     i = (n + slides.length) % slides.length;
@@ -16,7 +15,7 @@
     imgs.forEach(function (m, k) { m.classList.toggle('is-active', k === i); });
     dots.forEach(function (d, k) { d.classList.toggle('is-on', k === i); });
   }
-  function play() { if (reduce) return; stop(); timer = setInterval(function () { show(i + 1); }, 6500); }
+  function play() { stop(); timer = setInterval(function () { show(i + 1); }, 6500); }
   function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
   dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); play(); }); });
