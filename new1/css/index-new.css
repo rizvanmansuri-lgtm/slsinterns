@@ -1,0 +1,59 @@
+/* =====================================================================
+   INDEX-NEW  –  styles used ONLY by index-new.html
+   Safe to delete together with: index-new.html, js/index-new.js
+   (nothing else on the site references this file)
+   ===================================================================== */
+
+/* ---------- full-width background hero ---------- */
+.nhero{position:relative;color:#fff;background:#1d1240;overflow:hidden}
+.nhero__slide{position:relative;display:flex;align-items:center;min-height:max(40rem,calc(100vh - 4.375rem));max-height:60rem}
+.nhero__bg{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;transform:scale(1.1);transition:transform 8s ease-out}
+.nhero__slide.swiper-slide-active .nhero__bg{transform:scale(1)}
+.nhero__slide::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(29,18,64,.94) 0%,rgba(61,40,130,.82) 42%,rgba(91,66,159,.30) 100%)}
+.nhero__slide::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40%;z-index:1;background:linear-gradient(0deg,rgba(20,10,50,.75),transparent)}
+.nhero__inner{position:relative;z-index:2;padding-block:5rem 9.5rem}
+.nhero__eyebrow{display:inline-block;margin-bottom:1.2rem;padding:.4rem 1rem;border:1px solid rgba(255,255,255,.4);border-radius:2rem;font-family:var(--font-heading);font-weight:400;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.1);backdrop-filter:blur(6px)}
+.nhero h1{max-width:50rem;font-family:var(--font-heading);font-weight:500;font-size:clamp(2rem,3.2vw,3.25rem);line-height:1.2;margin-bottom:1.3rem}
+.nhero p{max-width:40rem;font-family:var(--font-body);font-size:clamp(1.05rem,1.4vw,1.3rem);line-height:1.65;color:var(--color-on-primary-soft);margin-bottom:2.2rem}
+.nhero__btns{display:flex;flex-wrap:wrap;gap:1rem}
+.nhero__btns .btn--ghost{background:transparent;border:2px solid #fff;color:#fff}
+.nhero__btns .btn--ghost:hover{background:#fff;color:var(--color-primary)}
+.nhero__slide.swiper-slide-active .nhero__eyebrow{animation:rise .7s ease both}
+.nhero__slide.swiper-slide-active h1{animation:slideLeft .9s cubic-bezier(.2,.7,.2,1) .1s both}
+.nhero__slide.swiper-slide-active p{animation:rise .8s ease .3s both}
+.nhero__slide.swiper-slide-active .nhero__btns{animation:rise .8s ease .45s both}
+
+/* arrows + dots */
+.nhero__arrow{position:absolute;top:50%;z-index:6;width:3.2rem;height:3.2rem;margin-top:-1.6rem;display:grid;place-items:center;border:1px solid rgba(255,255,255,.45);border-radius:50%;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);color:#fff;cursor:pointer;transition:background .25s,color .25s}
+.nhero__arrow:hover{background:#fff;color:var(--color-primary)}
+.nhero__arrow svg{width:1.2rem;height:1.2rem}
+.nhero__arrow--prev{left:1.6rem}
+.nhero__arrow--next{right:1.6rem}
+.nhero .nhero__dots{position:absolute;left:0;right:0;bottom:7.2rem;z-index:6;display:flex;justify-content:center;gap:.6rem}
+.nhero .swiper-pagination-bullet{position:relative;width:.7rem;height:.7rem;margin:0;border-radius:.4rem;background:rgba(255,255,255,.5);opacity:1;transition:width .3s,background .3s}
+.nhero .swiper-pagination-bullet::after{content:"";position:absolute;inset:-.55rem -.2rem}
+.nhero .swiper-pagination-bullet-active{width:2.2rem;background:var(--color-accent)}
+
+/* glass highlights strip pinned to the bottom of the hero */
+.nhero__stats{position:absolute;left:0;right:0;bottom:1.6rem;z-index:6}
+.nhero__stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.nhero__stat{padding:1rem 1.2rem;border:1px solid rgba(255,255,255,.28);border-radius:.9rem;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);text-align:center}
+.nhero__stat strong{display:block;font-family:var(--font-heading);font-weight:500;font-size:1.35rem;line-height:1.2}
+.nhero__stat span{font-family:var(--font-heading);font-weight:300;font-size:.875rem;color:var(--color-on-primary-soft)}
+
+@media (min-width:1101px) and (max-width:1599px){.nhero__inner{padding-block:4rem 9rem}}
+@media (max-width:1100px){
+  .nhero__slide{max-height:none}
+  .nhero__arrow{display:none}
+  .nhero__inner{padding-block:3.5rem 12rem}
+  .nhero .nhero__dots{bottom:10.6rem}
+  .nhero__stats .container{grid-template-columns:repeat(2,1fr);gap:.7rem}
+  .nhero__stat{padding:.7rem .8rem}
+  .nhero__stat strong{font-size:1.05rem}
+  .nhero__stat span{font-size:.8rem}
+}
+@media (max-width:560px){
+  .nhero__slide{min-height:38rem}
+  .nhero__inner{padding-block:3rem 12.5rem}
+  .nhero__btns .btn{width:100%;text-align:center}
+}
