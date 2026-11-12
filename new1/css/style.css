@@ -572,7 +572,8 @@ h1,h2,h3,h4,p{margin:0}
 .paper,.pcard,.scard,.ccard,.rprel__card,.pcar__card,.stair{transition:opacity .7s ease,transform .5s ease,box-shadow .35s ease}
 .paper:hover,.ccard:hover,.rprel__card:hover,.pcar__card:hover{transform:translateY(-6px);box-shadow:0 1rem 2.2rem rgba(0,0,0,.14)}
 .paper img,.ccard__img,.rprel__card img,.pget__img img,.pcar__card img{transition:transform .6s ease}
-.paper:hover img,.ccard:hover .ccard__img,.rprel__card:hover img,.pcar__card:hover img{transform:scale(1.05)}
+.ccard:hover .ccard__img,.rprel__card:hover img,.pcar__card:hover img{transform:scale(1.05)}
+.paper:hover img{transform:scale(1.01)}
 .paper,.ccard,.rprel__card,.pcar__card{overflow:hidden}
 .stair:hover{transform:translateY(-4px)}
 .acc__item{transition:border-color .25s,box-shadow .3s,transform .3s}
