@@ -29,7 +29,7 @@
 .nhero__arrow svg{width:1.2rem;height:1.2rem}
 .nhero__arrow--prev{left:1.6rem}
 .nhero__arrow--next{right:1.6rem}
-.nhero .nhero__dots{position:absolute;left:0;right:0;bottom:7.2rem;z-index:6;display:flex;justify-content:center;gap:.6rem}
+.nhero .nhero__dots{position:absolute;left:0;right:0;bottom:8.2rem;z-index:6;display:flex;justify-content:center;gap:.6rem}
 .nhero .swiper-pagination-bullet{position:relative;width:.7rem;height:.7rem;margin:0;border-radius:.4rem;background:rgba(255,255,255,.5);opacity:1;transition:width .3s,background .3s}
 .nhero .swiper-pagination-bullet::after{content:"";position:absolute;inset:-.55rem -.2rem}
 .nhero .swiper-pagination-bullet-active{width:2.2rem;background:var(--color-accent)}
