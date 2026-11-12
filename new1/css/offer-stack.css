@@ -1,0 +1,54 @@
+/* =====================================================================
+   OFFER-STACK  –  styles for the stacked "What We Offer" section (.otest)
+   Used by: indextest.html and index-new.html (section "OFFER B").
+   To remove the section: delete the <section class="otest"> block from the page,
+   the <link> to this file and the <script> for js/offer-stack.js, then delete both files.
+   ===================================================================== */
+.otest{padding:5.5rem 0 5rem;background:#fff}
+.otest__intro{max-width:56rem;margin:0 auto 3.2rem;text-align:center;display:flex;flex-direction:column;align-items:center}
+.otest__intro h2{font-family:var(--font-heading);font-weight:500;font-size:2.75rem;line-height:1.2;margin-bottom:1.1rem}
+.otest__intro p{font-family:var(--font-body);font-size:1.0625rem;line-height:1.75;color:var(--color-text)}
+
+/* the stack: every card is sticky with the same top, later cards slide over earlier ones */
+.otest__stack{position:relative}
+.otest__card{--i:0;--p:0;position:sticky;top:calc(4.375rem + 1.25rem + var(--i) * .9rem);margin-bottom:2.2rem;padding:2.6rem 3rem;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:3.5rem;min-height:27rem;border:2px solid var(--bd);border-radius:2rem;background:var(--bg);transform:scale(calc(1 - var(--p) * .05));transform-origin:50% 0;will-change:transform}
+.otest__card:last-child{margin-bottom:0}
+.otest__card::after{content:"";position:absolute;inset:-2px;border-radius:inherit;background:#1d1240;opacity:calc(var(--p) * .16);pointer-events:none}
+
+.otest__shot{position:relative;padding:0 0 1.6rem}
+.otest__frame{overflow:hidden;border-radius:1.1rem;background:#fff;box-shadow:0 .6rem 2rem rgba(29,18,64,.12)}
+.otest__frame img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.otest__float{position:absolute;right:-1.4rem;bottom:0;width:15rem;overflow:hidden;border-radius:.7rem;background:#fff;box-shadow:0 .5rem 1.6rem rgba(29,18,64,.2);font-family:var(--font-body)}
+.otest__float h4{margin:0;padding:.55rem .9rem;background:var(--color-primary);color:#fff;font-family:var(--font-heading);font-weight:500;font-size:.8125rem}
+.otest__float ul{margin:0;padding:.35rem .9rem .5rem;list-style:none}
+.otest__float li{display:flex;justify-content:space-between;gap:.8rem;padding:.3rem 0;border-bottom:1px solid #eee;font-size:.8125rem;color:var(--color-text-muted)}
+.otest__float li:last-child{border-bottom:0}
+.otest__float li b{font-weight:600;color:var(--color-text)}
+
+.otest__num{display:inline-block;margin-bottom:1rem;padding:.3rem .9rem;border-radius:2rem;background:rgba(255,255,255,.75);font-family:var(--font-heading);font-weight:500;font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary)}
+.otest__body h3{font-family:var(--font-heading);font-weight:500;font-size:2.1rem;line-height:1.25;color:#23232d;margin-bottom:1rem}
+.otest__body p{max-width:30rem;font-family:var(--font-body);font-size:1.0625rem;line-height:1.75;color:#454555;margin-bottom:1.6rem}
+.otest__link{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-heading);font-weight:500;font-size:1rem;color:var(--color-primary);text-decoration:none}
+.otest__link svg{width:1.1rem;height:1.1rem;transition:transform .25s}
+.otest__link:hover svg{transform:translateX(.3rem)}
+.otest__cta{margin-top:3.4rem;text-align:center}
+
+/* soft tints, one per program */
+.otest__card:nth-child(7n+1){--bg:#def1ff;--bd:#b4defa}
+.otest__card:nth-child(7n+2){--bg:#efe7ff;--bd:#d5c3fa}
+.otest__card:nth-child(7n+3){--bg:#fff0e0;--bd:#f9d5aa}
+.otest__card:nth-child(7n+4){--bg:#e2f7ea;--bd:#b4e6c7}
+.otest__card:nth-child(7n+5){--bg:#ffe8ef;--bd:#f8bfd1}
+.otest__card:nth-child(7n+6){--bg:#e5f6f6;--bd:#b0e2e2}
+.otest__card:nth-child(7n+7){--bg:#f3f0d8;--bd:#e2dc9f}
+
+@media (min-width:1101px) and (max-width:1599px){.otest__card{padding:2.2rem 2.6rem;gap:3rem;min-height:25rem}}
+@media (max-width:860px){
+  .otest{padding:3.5rem 0 3.5rem}
+  .otest__intro h2{font-size:2.1rem}
+  .otest__card{top:calc(4.375rem + .8rem + var(--i) * .6rem);grid-template-columns:1fr;gap:1.4rem;padding:1.4rem 1.2rem 1.6rem;min-height:0;border-radius:1.4rem;margin-bottom:1.4rem}
+  .otest__float{right:-.3rem;width:12.5rem}
+  .otest__body h3{font-size:1.55rem}
+  .otest__body p{font-size:1rem;margin-bottom:1.1rem}
+}
+@media (max-width:560px){.otest__float{display:none}.otest__shot{padding-bottom:0}}
