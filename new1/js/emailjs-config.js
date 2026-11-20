@@ -15,7 +15,7 @@
         {{from_email}}      Email         (set this as "Reply-To" in the template)
         {{subject}}         Subject
         {{message}}         Requirement
-        {{travel_support}}  Travel & Accommodation Support (Yes / No)
+        {{i_am_a}}  I am a (Student / Parent / School / Counselor / University / Business Partner)
         {{program}}         Which page the enquiry came from
         {{page_url}}        Full URL of that page
    ===================================================================== */

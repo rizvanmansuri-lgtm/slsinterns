@@ -36,7 +36,16 @@
   modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
 
+  // prefill from links like contact.html?iam=Parent&subject=...
+  var qs = null;
+  try { qs = new URLSearchParams(window.location.search); } catch (e) {}
+
   forms.forEach(function (form) {
+    if (qs) {
+      var sel = form.querySelector('select[name="i_am_a"]'), sub = form.querySelector('input[name="subject"]');
+      if (sel && qs.get('iam')) { Array.prototype.forEach.call(sel.options, function (o) { if (o.text === qs.get('iam')) sel.value = o.value || o.text; }); }
+      if (sub && qs.get('subject')) sub.value = qs.get('subject');
+    }
     var status = form.querySelector('.form__status');
     var btn = form.querySelector('button[type="submit"]');
     var urlField = form.querySelector('input[name="page_url"]');

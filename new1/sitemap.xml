@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.example.com/</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/winter-program.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/courses.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/program-aerospace-aviation.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/program-biotech-life-sciences.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/program-blockchain-ai.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/program-electronics-product-design.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/program-fashion-design.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/program-finance-economics.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/program-interdisciplinary-engineering.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/program-governance-policy.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/program-marketing-communications.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/program-product-design.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/program-psychology.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/program-pure-sciences-mathematics.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/research-paper-standard.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/research-paper-advanced.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/passion-product.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/social-impact-project.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/giip.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/for-schools.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/for-counselors.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/how-it-works.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/services.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/activity-website.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/activity-instagram-facebook-page.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/activity-linkedin-page-posts.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/activity-blog.html</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.example.com/activity-profile-building.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/about.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/partners.html</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.example.com/contact.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/privacy.html</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.example.com/terms.html</loc><lastmod>2026-10-31</lastmod></url>
 </urlset>
